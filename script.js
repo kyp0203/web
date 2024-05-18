@@ -14,3 +14,22 @@ const gugudan = () => {
     }
 };
 gugudan();
+
+function sum1(num1, num2){
+    let result = num1 + num2;
+    console.log("inner: " + result);
+}
+sum1(10,20);
+
+// function sum(num1, num2){
+//     let result = num1 + num2;
+// }
+// sum(10,20);
+// console.log("out: " + result); //ReferenceError: result is not defined
+
+function sum(num1, num2){
+    let result = num1 + num2;
+    return result;
+}
+const result = sum(10,20);
+console.log("out: " + result); 

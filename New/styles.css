@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'LAB';
+    src: url('../New/LAB디지털.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'LAB';
+}
+
+.rotating-number {
+    font-size: 68px;
+    color: #8b0000	;
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+    font-family: 'LAB';
+}

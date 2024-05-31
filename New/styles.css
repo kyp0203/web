@@ -18,14 +18,18 @@ body {
     text-align: center;
     font-size: 48px;
     font-family: 'LAB';
+    height: 100px;
 }
 
 .rotating-number {
     font-size: 68px;
+    font-weight: 600;
     color: #8b0000	;
+    text-shadow: 0 0 5px rgba(207, 38, 38, 0.7);
+    animation: neon-flicker 1s infinite alternate;
     display: inline-block;
     transition: transform 0.5s ease-in-out; 
     /*transform 속성의 변경에 0.5초 동안 애니메이션 효과를 적용하며, 
     애니메이션을 천천히 시작하고 끝내는 방식으로 설정합니다.*/
-    font-family: 'LAB';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

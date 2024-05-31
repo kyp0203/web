@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'LAB';
     src: url('../New/LAB디지털.ttf');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: normal; /*폰트 굵기 지정*/
+    font-style: normal; 
 }
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /*요소를 세로 방향으로 정렬*/
+    align-items: center; /*요소를 수평 중앙에 정렬*/
+    justify-content: center; /*요소를 수직 중앙에 정렬*/
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
@@ -24,6 +24,8 @@ body {
     font-size: 68px;
     color: #8b0000	;
     display: inline-block;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out; 
+    /*transform 속성의 변경에 0.5초 동안 애니메이션 효과를 적용하며, 
+    애니메이션을 천천히 시작하고 끝내는 방식으로 설정합니다.*/
     font-family: 'LAB';
 }

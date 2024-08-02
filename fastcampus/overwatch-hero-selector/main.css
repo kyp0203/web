@@ -57,13 +57,16 @@ body {
 .hero .image {
   width: 140%;
   height: 100%;
+  /* .image 요소를 x축으로 -16px 이동, x축을 따라 14도 기울임 */
   transform: translateX(-16px) skewX(14deg);
+  /* 배경 이미지를 요소의 중앙에 위치 */
   background-position: center;
+  /* 배경 이미지 반복 없앰 */
   background-repeat: no-repeat;
   background-size: 90px;
 }
 /* 각 영웅 박스에 고유한 이미지를 설정함 
-  nth-child 사용해서 각 영웅에게 다른 배경 이미지를 적용함*/
+  nth-child 사용해서 각 영웅에게 다른 배경 이미지를*/
 .hero:nth-child(1) .image { background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero1.png"); }
 .hero:nth-child(2) .image { background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero2.png"); }
 .hero:nth-child(3) .image { background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero3.png"); }
@@ -102,9 +105,11 @@ body {
 
 .logo {
   max-width: 300px;
+  /* 중앙 정렬 */
   margin: 0 auto;
   padding: 0 20px;
 }
 .logo img {
+  /* 이미지를 컨테이너의 너비에 맞추어 100% 크기로 설정 */
   width: 100%;
 }

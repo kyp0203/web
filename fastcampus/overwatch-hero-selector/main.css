@@ -1,19 +1,30 @@
 body {
+  /* 전체 높이 설정 */
   height: 100vh;
+  /* 백그라운드 이미지 설정 */
   background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/bg.jpg");
+  /* 백그라운드 사이즈는 창의 크기에 맞게 확대됨 */
   background-size: cover;
+  /* 백그라운드는 반복되지 않음 
+  반복 켜두면 사진이 여러장 이어붙인 것처럼 나옴 */
   background-repeat: no-repeat;
+  /* 스크롤 해도 고정되어 있음 */
   background-attachment: fixed;
 }
 .container {
   padding: 50px 0;
 }
 .heroes {
+  /* flexbox 레이아웃으로 설정 */
   display: flex;
+  /* 아이템이 줄바꿈할 수 있도록 설정 */
   flex-wrap: wrap;
+  /* flex 아이템들을 컨테이너의 가운데 정렬 */
   justify-content: center;
   max-width: 660px;
+  /* 컨테이너를 수평 중앙 정렬 */
   margin: 0 auto;
+  /* 컨테이너의 상하에 40, 좌우에 20의 패딩 추가 */
   padding: 40px 20px;
 }
 .hero {
@@ -22,16 +33,24 @@ body {
   margin: 4px;
   border: 3px solid #fff;
   border-radius: 10px;
+  /* padding과 border 요소의 전체 크기에 포함시킴 */
   box-sizing: border-box;
+  /* .hero 요소 내부의 넘치는 컨텐츠를 숨김 */
   overflow: hidden;
   background-color: #555;
+  /* .hero 요소를 x축을 따라 -14도 기울임 */
   transform: skewX(-14deg);
+  /* hero 요소의 변화에 트랜지션 효과를 추가함 */
   transition:
+  /* transform 속성 변화를 0.1초 동안 애니메이션 한다 */
     transform .1s,
+  /* 배경화면 속성 변화를 0.6초 동안 애니메이션 한다 */
     background-color .6s;
 }
+/* 마우스 hover(위에 갖다대면) */
 .hero:hover {
   background-color: #ff9c00;
+  /*  */
   transform: skewX(-14deg) scale(1.3);
   z-index: 1;
 }
@@ -43,6 +62,8 @@ body {
   background-repeat: no-repeat;
   background-size: 90px;
 }
+/* 각 영웅 박스에 고유한 이미지를 설정함 
+  nth-child 사용해서 각 영웅에게 다른 배경 이미지를 적용함*/
 .hero:nth-child(1) .image { background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero1.png"); }
 .hero:nth-child(2) .image { background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero2.png"); }
 .hero:nth-child(3) .image { background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero3.png"); }
